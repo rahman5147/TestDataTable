@@ -34,7 +34,7 @@
 			<ul class="nav navbar-top-links navbar-right">
 				<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    	<i class="fa fa-user"></i> Superadmin <b class="caret"></b>
+                    	<i class="fa fa-user"></i> Super Admin <b class="caret"></b>
                 	</a>
                     <ul class="dropdown-menu">
                         <li>
@@ -102,17 +102,25 @@
 	                    <h1 class="page-header">Dashboard</h1>
 	                </div>
 	            </div> <!-- End 1st row -->
-	            <div class="row"> <!-- Start 2nd row: statistic overview; 3 + 3 + 3 + 3 col span -->
+	            <div class="row"> <!-- Start 2nd row: for display alert dissmiss dialog -->
+                    <div class="col-lg-12">
+                        <div class="alert alert-warning alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <i class="fa fa-info-circle"></i> Database not connected!
+                        </div>
+                    </div>
+                </div> <!-- End 2nd row -->
+	            <div class="row"> <!-- Start 3rd row: statistic overview; 3 + 3 + 3 + 3 col span -->
 	                <div class="col-lg-3 col-md-6">
 	                    <div class="panel panel-primary">
 	                        <div class="panel-heading">
 	                            <div class="row">
 	                                <div class="col-xs-3">
-	                                    <i class="fa fa-comments fa-5x"></i>
+	                                    <i class="fa fa-cube fa-5x"></i>
 	                                </div>
 	                                <div class="col-xs-9 text-right">
 	                                    <div class="huge">26</div>
-	                                    <div>New Comments!</div>
+	                                    <div>New Stock!</div>
 	                                </div>
 	                            </div>
 	                        </div>
@@ -174,11 +182,11 @@
 	                        <div class="panel-heading">
 	                            <div class="row">
 	                                <div class="col-xs-3">
-	                                    <i class="fa fa-support fa-5x"></i>
+	                                    <i class="fa fa-file-excel-o fa-5x"></i>
 	                                </div>
 	                                <div class="col-xs-9 text-right">
 	                                    <div class="huge">13</div>
-	                                    <div>Support Tickets!</div>
+	                                    <div>File excel</div>
 	                                </div>
 	                            </div>
 	                        </div>
@@ -191,8 +199,8 @@
 	                        </a>
 	                    </div>
 	                </div>
-	            </div> <!-- End 2nd row -->
-	            <div class="row"> <!-- Start 3rd Row: misc panel; 8 + 4 col span -->
+	            </div> <!-- End 3nd row -->
+	            <div class="row"> <!-- Start 4th Row: misc panel; 8 + 4 col span -->
 	                <div class="col-lg-8">
 	                    <div class="panel panel-default">
 	                        <div class="panel-heading">
@@ -213,7 +221,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	            </div> <!-- End 3rd Row -->
+	            </div> <!-- End 4th Row -->
         </div>
         <!-- /#page-wrapper -->
 
