@@ -392,19 +392,21 @@
             	dom: 'Bfrtip',
             	buttons: [{
             			extend: 'excelHtml5',
-            			text: 'Save as Excel',
+            			text: "<i class='fa fa-file-excel-o'></i> Excel",
             			className: 'excelbtn',
 		                exportOptions: {
 		                    columns: [ 2, 3, 4, 5, 6 ]
 		                }
-                	},'csvHtml5',{
+                	},{
                 		extend: 'pdfHtml5',
+                		text: "<i class='fa fa-file-pdf-o'></i> PDF",
                 		title: 'All record',
                 		exportOptions:{
 		                    columns: [ 2, 3, 4, 5, 6 ]
                 		}
                 	},{
                 		extend: 'print',
+                		text: "<i class='fa fa-print'></i> PDF",
                 		title: 'All record',
                 		exportOptions:{
 		                    columns: [ 2, 3, 4, 5, 6 ]
