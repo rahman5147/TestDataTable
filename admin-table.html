@@ -10,10 +10,28 @@
 	<link rel="stylesheet" type="text/css" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
 	<!-- DataTable CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/datatable/DataTables-1.10.12/css/dataTables.bootstrap.min.css">
+	<!-- DataTable extension css -->
+	<link rel="stylesheet" type="text/css" href="assets/datatable_extension/buttons.dataTables.min.css">
 	<!-- MetisMenu CSS -->
     <link href="assets/metisMenu/metisMenu.min.css" rel="stylesheet">
     <!-- Custom css: SB Admin 2 -->
     <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <style type="text/css">
+    	tfoot {
+		    display: table-header-group;
+		}
+
+		.excelbtn{
+			/*position:relative;*/
+		}
+		.excelbtn:before {
+			/*content: "\25AE";*/
+			/*font-family: FontAwesome;*/
+			/*left:-5px;*/
+			/*position:absolute;*/
+			/*top:0;*/
+		}
+    </style>
 </head>
 <body>
     <div id="wrapper">
@@ -87,7 +105,7 @@
                     <div class="col-lg-12">
                         <div class="alert alert-warning alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <i class="fa fa-info-circle"></i> Database not connected!
+                            <i class="fa fa-warning"></i> Database not connected!
                         </div>
                     </div>
                 </div> <!-- End 2nd row -->
@@ -112,14 +130,138 @@
 	                        					<th class="nosort">Action</th>
 	                        				</tr>
 	                        			</thead>
+
+	                        			<tfoot>
+									        <tr>
+									            <th></th>
+									            <th></th>
+									            <th>ID</th>
+									            <th>Created Date</th>
+									            <th>Updated Date</th>
+									            <th>Name</th>
+									            <th>User ID</th>
+									            <th></th>
+									        </tr>
+									    </tfoot>
+
 	                        			<tbody>
                         					<tr>
                         						<td><input name="select_all" value="1" id="cb-select-all" type="checkbox"></td>
                         						<th>1</th>
-                        						<td><a href="#">1</a></td>
+                        						<td>P1</td>
                         						<td>12/12/12</td>
                         						<td>12/12/16</td>
                         						<td>The mod</td>
+                        						<td>rp13</td>
+                        						<td>
+                        							<a href="#">
+                        								<i class="glyphicon glyphicon-pencil"></i>
+                        							</a>
+                        							&nbsp;
+                        							<a class="edit-account" href="#">
+                        								<i class="fa fa-pencil-square-o"></i>
+                        							</a>
+                        							&nbsp;
+                    								<button type="submit" class="btn btn-xs btn-default" name="remove_acc">
+                    									<i class="glyphicon glyphicon-remove"></i>
+                    								</button>
+                        						</td>
+                        					</tr>
+                        					<tr>
+                        						<td><input name="select_all" value="1" id="cb-select-all" type="checkbox"></td>
+                        						<th>2</th>
+                        						<td>P2</td>
+                        						<td>12/12/12</td>
+                        						<td>12/12/16</td>
+                        						<td>kadbw oadwn</td>
+                        						<td>lol123</td>
+                        						<td>
+                        							<a href="#">
+                        								<i class="glyphicon glyphicon-pencil"></i>
+                        							</a>
+                        							&nbsp;
+                        							<a class="edit-account" href="#">
+                        								<i class="fa fa-pencil-square-o"></i>
+                        							</a>
+                        							&nbsp;
+                    								<button type="submit" class="btn btn-xs btn-default" name="remove_acc">
+                    									<i class="glyphicon glyphicon-remove"></i>
+                    								</button>
+                        						</td>
+                        					</tr>
+                        					<tr>
+                        						<td><input name="select_all" value="1" id="cb-select-all" type="checkbox"></td>
+                        						<th>3</th>
+                        						<td>P3</td>
+                        						<td>12/12/12</td>
+                        						<td>12/12/16</td>
+                        						<td>Mill</td>
+                        						<td>lks009</td>
+                        						<td>
+                        							<a href="#">
+                        								<i class="glyphicon glyphicon-pencil"></i>
+                        							</a>
+                        							&nbsp;
+                        							<a class="edit-account" href="#">
+                        								<i class="fa fa-pencil-square-o"></i>
+                        							</a>
+                        							&nbsp;
+                    								<button type="submit" class="btn btn-xs btn-default" name="remove_acc">
+                    									<i class="glyphicon glyphicon-remove"></i>
+                    								</button>
+                        						</td>
+                        					</tr>
+                        					<tr>
+                        						<td><input name="select_all" value="1" id="cb-select-all" type="checkbox"></td>
+                        						<th>4</th>
+                        						<td>P4</td>
+                        						<td>11/22/12</td>
+                        						<td>17/01/15</td>
+                        						<td>mqwmsa aidbwi</td>
+                        						<td>jm127</td>
+                        						<td>
+                        							<a href="#">
+                        								<i class="glyphicon glyphicon-pencil"></i>
+                        							</a>
+                        							&nbsp;
+                        							<a class="edit-account" href="#">
+                        								<i class="fa fa-pencil-square-o"></i>
+                        							</a>
+                        							&nbsp;
+                    								<button type="submit" class="btn btn-xs btn-default" name="remove_acc">
+                    									<i class="glyphicon glyphicon-remove"></i>
+                    								</button>
+                        						</td>
+                        					</tr>
+                        					<tr>
+                        						<td><input name="select_all" value="1" id="cb-select-all" type="checkbox"></td>
+                        						<th>5</th>
+                        						<td>P5</td>
+                        						<td>12/12/12</td>
+                        						<td>04/11/16</td>
+                        						<td>IWbca</td>
+                        						<td>aksbd</td>
+                        						<td>
+                        							<a href="#">
+                        								<i class="glyphicon glyphicon-pencil"></i>
+                        							</a>
+                        							&nbsp;
+                        							<a class="edit-account" href="#">
+                        								<i class="fa fa-pencil-square-o"></i>
+                        							</a>
+                        							&nbsp;
+                    								<button type="submit" class="btn btn-xs btn-default" name="remove_acc">
+                    									<i class="glyphicon glyphicon-remove"></i>
+                    								</button>
+                        						</td>
+                        					</tr>
+                        					<tr>
+                        						<td><input name="select_all" value="1" id="cb-select-all" type="checkbox"></td>
+                        						<th>6</th>
+                        						<td>P6</td>
+                        						<td>12/12/12</td>
+                        						<td>12/12/16</td>
+                        						<td>pwodkw dwadbjh</td>
                         						<td>rahman5147</td>
                         						<td>
                         							<a href="#">
@@ -135,7 +277,52 @@
                     								</button>
                         						</td>
                         					</tr>
+                        					<tr>
+                        						<td><input name="select_all" value="1" id="cb-select-all" type="checkbox"></td>
+                        						<th>7</th>
+                        						<td>P7</td>
+                        						<td>20/11/14</td>
+                        						<td>30/10/15</td>
+                        						<td>Test 1102</td>
+                        						<td>pqwkd123</td>
+                        						<td>
+                        							<a href="#">
+                        								<i class="glyphicon glyphicon-pencil"></i>
+                        							</a>
+                        							&nbsp;
+                        							<a class="edit-account" href="#">
+                        								<i class="fa fa-pencil-square-o"></i>
+                        							</a>
+                        							&nbsp;
+                    								<button type="submit" class="btn btn-xs btn-default" name="remove_acc">
+                    									<i class="glyphicon glyphicon-remove"></i>
+                    								</button>
+                        						</td>
+                        					</tr>
+                        					<tr>
+                        						<td><input name="select_all" value="1" id="cb-select-all" type="checkbox"></td>
+                        						<th>8</th>
+                        						<td>P8</td>
+                        						<td>12/12/12</td>
+                        						<td>12/12/16</td>
+                        						<td>The mod</td>
+                        						<td>poi91</td>
+                        						<td>
+                        							<a href="#">
+                        								<i class="glyphicon glyphicon-pencil"></i>
+                        							</a>
+                        							&nbsp;
+                        							<a class="edit-account" href="#">
+                        								<i class="fa fa-pencil-square-o"></i>
+                        							</a>
+                        							&nbsp;
+                    								<button type="submit" class="btn btn-xs btn-default" name="remove_acc">
+                    									<i class="glyphicon glyphicon-remove"></i>
+                    								</button>
+                        						</td>
+                        					</tr>
 	                        			</tbody>
+
 	                        		</table>
 	                        	</div>
 	                        </div>
@@ -153,6 +340,27 @@
 
     </div> <!-- End Wrapper -->
 
+    <!-- Delete modal dialog -->
+    <div id="confirm-delete" class="modal fade" role='dialog'>
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	                <h4 class="modal-title">Delete </h4>
+	            </div>
+
+	            <div class="modal-body">
+	                <p>Do You Really Want to Delete This ?</p>    
+	            </div>
+
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<span id= 'deleteButton'></span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
     <!-- Jquery &amp; Bootstrap Javascript -->
 	<script type="text/javascript" src="assets/jquery/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript" src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -160,6 +368,13 @@
 	<script type="text/javascript" src="assets/datatable/DataTables-1.10.12/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="assets/datatable/DataTables-1.10.12/js/dataTables.bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/datatable/datatables.min.js"></script>
+	<!-- DataTable extension button -->
+	<script type="text/javascript" src="assets/datatable_extension/dataTables.buttons.min.js"></script>
+	<script type="text/javascript" src="assets/js/jszip.min.js"></script>
+	<script type="text/javascript" src="assets/js/pdfmake.min.js"></script>
+	<script type="text/javascript" src="assets/datatable_extension/buttons.print.min.js"></script>
+	<script type="text/javascript" src="assets/datatable_extension/buttons.html5.min.js"></script>
+    <script src="assets/datatable_extension/vfs_fonts.js"></script>
 	<!-- Metis plugin Javascript -->
     <script src="assets/metisMenu/metisMenu.min.js"></script>
     <!-- Custom js: SB Admin 2 -->
@@ -167,17 +382,34 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-            // Fundamental declaration
-            // $.fn.dataTable.Buttons.swfPath = 'http://cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf';
+            // $.fn.dataTable.Buttons.swfPath = 'assets/datatable_extension/flashExport.swf';
             var rows_selected = [];
             table = $('#sort').DataTable({
             	responsive: true,
+            	// dom: 'lftipr',
+            	// "sDom": "B<'row'><'row'<'col-md-6'l><'col-md-6'f>r>t<'row'<'col-md-4'i>><'row'<'#colvis'>p>",
+            	// dom: 'T<"clear">lfrtip',
+            	dom: 'Bfrtip',
             	buttons: [{
             			extend: 'excelHtml5',
+            			text: 'Save as Excel',
+            			className: 'excelbtn',
 		                exportOptions: {
-		                    columns: [ 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+		                    columns: [ 2, 3, 4, 5, 6 ]
 		                }
-                	},'copyHtml5','csvHtml5','pdfHtml5'
+                	},'csvHtml5',{
+                		extend: 'pdfHtml5',
+                		title: 'All record',
+                		exportOptions:{
+		                    columns: [ 2, 3, 4, 5, 6 ]
+                		}
+                	},{
+                		extend: 'print',
+                		title: 'All record',
+                		exportOptions:{
+		                    columns: [ 2, 3, 4, 5, 6 ]
+                		}
+                	}
             	],
                 'columnDefs': [{
                         'targets': 0,
@@ -203,7 +435,26 @@
                         $(row).find('input[type="checkbox"]').prop('checked', true);
                         $(row).addClass('selected');
                     }
-                }
+                },
+                initComplete: function () {
+		            this.api().columns([2,3,4,5,6]).every( function () {
+		                var column = this;
+		                var select = $('<select><option value=""></option></select>')
+		                    .appendTo( $(column.footer()).empty() )
+		                    .on( 'change', function () {
+		                        var val = $.fn.dataTable.util.escapeRegex(
+		                            $(this).val()
+		                        );
+		 
+		                        column
+		                            .search( val ? '^'+val+'$' : '', true, false )
+		                            .draw();
+		                    } );
+		                column.data().unique().sort().each( function ( d, j ) {
+		                    select.append( '<option value="'+d+'">'+d+'</option>' )
+		                } );
+		            } );
+		        }
             });
 
             // Handle click on checkbox
@@ -277,7 +528,43 @@
                     );
                 });
             });
-        });
+
+            function updateDataTableSelectAllCtrl(table){
+	            var $table             = table.table().node();
+	            var $chkbox_all        = $('tbody input[type="checkbox"]', $table);
+	            var $chkbox_checked    = $('tbody input[type="checkbox"]:checked', $table);
+	            var chkbox_select_all  = $('thead input[name="select_all"]', $table).get(0);
+
+	            // If none of the checkboxes are checked
+	            if($chkbox_checked.length === 0){
+	                chkbox_select_all.checked = false;
+	                if('indeterminate' in chkbox_select_all){
+	                    chkbox_select_all.indeterminate = false;
+	                }
+
+	                // If all of the checkboxes are checked
+	            } else if ($chkbox_checked.length === $chkbox_all.length){
+	                chkbox_select_all.checked = true;
+	                if('indeterminate' in chkbox_select_all){
+	                    chkbox_select_all.indeterminate = false;
+	                }
+
+	            // If some of the checkboxes are checked
+	            } else {
+	                chkbox_select_all.checked = true;
+	                if('indeterminate' in chkbox_select_all){
+	                    chkbox_select_all.indeterminate = true;
+	                }
+	    		}
+	        }
+
+			$('button[name="remove_acc"]').on('click', function(e){
+				e.preventDefault();
+			    $('#confirm-delete').modal();
+				$('#deleteButton').html('<a class="btn btn-danger">Delete</a>');
+			});
+
+        }); // End Document Ready
 	</script>
 </body>
 </html>
