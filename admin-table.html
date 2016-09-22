@@ -389,7 +389,12 @@
             	// dom: 'lftipr',
             	// "sDom": "B<'row'><'row'<'col-md-6'l><'col-md-6'f>r>t<'row'<'col-md-4'i>><'row'<'#colvis'>p>",
             	// dom: 'T<"clear">lfrtip',
-            	dom: 'Bfrtip',
+            	// dom: 'Blfrtip',
+            	dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
+					"<'row'<'col-sm-12'tr>>" +
+					"<'row'<'col-sm-5'i><'col-sm-7'p>>" +
+					// "<'row'<'col-sm-3'i><'col-sm-5'B><'col-sm-4'p>>" ,
+					"<'row'<'col-sm-4 col-sm-offset-4'B>>" ,
             	buttons: [{
             			extend: 'excelHtml5',
             			text: "<i class='fa fa-file-excel-o'></i> Excel",
@@ -406,7 +411,7 @@
                 		}
                 	},{
                 		extend: 'print',
-                		text: "<i class='fa fa-print'></i> PDF",
+                		text: "<i class='fa fa-print'></i> Print",
                 		title: 'All record',
                 		exportOptions:{
 		                    columns: [ 2, 3, 4, 5, 6 ]
